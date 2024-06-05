@@ -1,0 +1,174 @@
+.profile-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .profile-image {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .profile-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+  }
+  
+  .custom-file-upload {
+    display: inline-block;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .custom-file-upload:hover {
+    background-color: #0056b3;
+  }
+  
+  .profile-info {
+    width: 100%;
+  }
+  
+  .info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .info-item label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .info-item p {
+    margin: 0;
+  }
+  
+  .info-item button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .info-item button:hover {
+    background-color: #0056b3;
+  }
+  
+  .add-post,
+  .posts-list {
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .toggle-form-button,
+  .toggle-posts-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .toggle-form-button:hover,
+  .toggle-posts-button:hover {
+    background-color: #218838;
+  }
+  
+  .adoption-form-container {
+    width: 100%;
+  }
+  
+  .adoption-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .adoption-form input,
+  .adoption-form select,
+  .adoption-form button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .adoption-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+  }
+  
+  .adoption-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .post-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .post-item img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .post-item h3 {
+    margin: 0 0 10px 0;
+  }
+  
+  .post-item p {
+    margin: 5px 0;
+  }
+  
+  .post-item button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .post-item button:hover {
+    background-color: #0056b3;
+  }
+  
