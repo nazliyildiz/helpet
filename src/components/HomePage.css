@@ -1,6 +1,7 @@
 .background-container {
     background-size: cover;
     height: 100vh;
+
   }
   
   .home-container {
@@ -16,6 +17,7 @@
     align-items: center;
     margin-bottom: 20px;
   }
+  
   .header h1 {
     font-size: 2rem;
     font-weight: bold;
