@@ -1,24 +1,46 @@
 .navbar {
-    background-color: #f8f9fa; /* Açık gri arka plan rengi */
-    border-bottom: 1px solid #e7e7e7; /* Alt kısma ince bir çizgi */
-    padding: 10px 20px; /* Üst ve alt 10px, sağ ve sol 20px padding */
-    display: flex;
-    justify-content: space-between; /* Linkleri yatayda dağıtmak için */
-    align-items: center; /* Linkleri dikeyde ortalamak için */
-  }
-  
-  .navbar-links {
-    display: flex;
-    gap: 20px; /* Linkler arasında 20px boşluk */
-  }
-  
-  .navbar-links a {
-    color: #333; /* Koyu gri metin rengi */
-    text-decoration: none; /* Alt çizgiyi kaldır */
-    font-size: 16px; /* Yazı boyutu */
-    transition: color 0.3s; /* Renk değişimi için geçiş süresi */
-  }
-  
-  .navbar-links a:hover {
-    color: #007bff; /* Üzerine gelindiğinde mavi renk */
-  }
+  background-color: #f8f9fa; /* Açık gri arka plan rengi */
+  border-bottom: 1px solid #e7e7e7; /* Alt kısma ince bir çizgi */
+  padding: 10px 20px; /* Üst ve alt 10px, sağ ve sol 20px padding */
+}
+
+.custom-navbar {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 20px; /* Linkler arasında 20px boşluk */
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  font-size: 16px; /* Yazı boyutu */
+  transition: color 0.3s, background-color 0.3s; /* Renk ve arka plan değişimi için geçiş süresi */
+  padding: 8px 12px; /* İçerik padding */
+  border-radius: 5px; /* Hafif yuvarlatılmış köşeler */
+}
+
+.nav-item:hover {
+  color: #3bab20; /* Üzerine gelindiğinde mavi renk */
+  background-color: rgba(0, 123, 255, 0.1); /* Üzerine gelindiğinde hafif mavi arka plan */
+  cursor: pointer; /* İşaretçi */
+}
+
+.nav-item.active {
+  color: white; /* Aktif olduğunda beyaz metin rengi */
+  background-color: #023311; /* Aktif olduğunda mavi arka plan */
+}
+
+/* Navbar bağlantıları */
+.navbar-links a {
+  color: #333; /* Koyu gri metin rengi */
+  text-decoration: none; /* Alt çizgiyi kaldır */
+  transition: color 0.3s; /* Renk değişimi için geçiş süresi */
+}
+
+.navbar-links a:hover {
+  color: #007bff; /* Üzerine gelindiğinde mavi renk */
+}
+

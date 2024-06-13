@@ -1,0 +1,76 @@
+.adoption-posts {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .adoption-posts h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .posts-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .post-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: calc(25% - 20px); /* Kartlar arasında boşluk bırakarak dörde bölme */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .post-item:hover {
+    transform: scale(1.05); /* Hover etkisi */
+  }
+  
+  .post-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    aspect-ratio: 1 / 1; /* Kare yap */
+    object-fit: cover; /* Resmi sığdır */
+  }
+  
+  .post-item h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #007bff;
+    text-align: center;
+  }
+  
+  .post-item p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+  }
+  
+  .post-item button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .post-item button:hover {
+    background-color: #218838;
+  }
+  

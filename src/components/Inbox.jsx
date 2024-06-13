@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import MessageComponent from './MessageComponent';
+import './Inbox.css';
 
 function Inbox({ currentUser, messageData }) {
   const [messages, setMessages] = useState([]);

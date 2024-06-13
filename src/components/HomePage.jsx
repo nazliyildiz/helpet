@@ -5,6 +5,7 @@ import logo from '../assets/logo.png';
 import pets2 from '../assets/pets2.png';
 import './HomePage.css';
 
+
 function HomePage({ onLogin, onRegister }) {
   const [isLogin, setIsLogin] = useState(true);
 

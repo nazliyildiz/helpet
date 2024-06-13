@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './AdoptionPosts.css';
 
 function AdoptionPosts({ setCurrentPage, setMessageData }) { // Yeni props ekledik
   const [posts, setPosts] = useState([]);

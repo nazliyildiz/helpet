@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './MessageComponent.css';
 
 function MessageComponent({ sender, receiver, post }) {
   const [messages, setMessages] = useState([]);
@@ -35,25 +36,27 @@ function MessageComponent({ sender, receiver, post }) {
   };
 
   return (
-    <div className="message-component">
-      <div className="messages-list">
-        {messages.map((msg, index) => (
-          <div key={index} className={`message ${msg.sender === sender ? 'sent' : 'received'}`}>
-            <p>{msg.message}</p>
-            <span>{new Date(msg.timestamp).toLocaleString()}</span>
-          </div>
-        ))}
+    <div className="message-component-wrapper">
+      <div className="message-component">
+        <div className="messages-list">
+          {messages.map((msg, index) => (
+            <div key={index} className={`message ${msg.sender === sender ? 'sent' : 'received'}`}>
+              <p>{msg.message}</p>
+              <span>{new Date(msg.timestamp).toLocaleString()}</span>
+            </div>
+          ))}
+        </div>
+        <form onSubmit={handleSendMessage}>
+          <input
+            type="text"
+            value={newMessage}
+            onChange={(e) => setNewMessage(e.target.value)}
+            placeholder="Mesajınızı yazın..."
+            required
+          />
+          <button type="submit">Gönder</button>
+        </form>
       </div>
-      <form onSubmit={handleSendMessage}>
-        <input
-          type="text"
-          value={newMessage}
-          onChange={(e) => setNewMessage(e.target.value)}
-          placeholder="Mesajınızı yazın..."
-          required
-        />
-        <button type="submit">Gönder</button>
-      </form>
     </div>
   );
 }

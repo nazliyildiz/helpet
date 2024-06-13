@@ -5,6 +5,7 @@ import AdoptionPosts from './components/AdoptionPosts';
 import Inbox from './components/Inbox';
 import Navbar from './components/Navbar';
 import FosterPosts from './components/FosterPosts'; // FosterPosts bileşenini ekledik
+import './styles.css';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -67,10 +68,10 @@ function App() {
   };
 
   return (
-    <>
+    <div className="container">
       {isAuthenticated && <Navbar onLogout={handleLogout} setCurrentPage={setCurrentPage} />}
       {renderPage()}
-    </>
+    </div>
   );
 }
 
